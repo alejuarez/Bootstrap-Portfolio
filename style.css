@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -8,12 +9,11 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
-  background-color: rgba(163, 194, 194, 0.667);
+  background: url(../bootstrap-portfolio/images/circles-light.png);
 }
 
 .container {
   width: 100%;
-  max-width: 960px;
   margin: auto;
   padding: 25px;
   clear: both;
@@ -28,8 +28,12 @@ p {
 h3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: 700;
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 49px;
   color: rgba(26, 43, 43, 0.667);
   margin-left: 10px;
+  border-bottom: 2px solid #4aaa;
 }
 
 h1 {
@@ -40,13 +44,24 @@ h1 {
 }
 
 .navbar {
+  height: 100px;
   border-bottom: 5px solid #4aaa;
 }
-.nav-link {
+nav li {
   color: rgb(77, 41, 41);
   float: right;
-  margin-left: 10px;
+  padding-left: 15px;
+  margin-left: 15px;
   margin-top: 25px;
+  /* display: inline-block; */
+  border-left: 1px solid #efefef;
+}
+
+nav li:first-child {
+  padding-left: 0;
+  margin-left: 30px;
+  border-left: 0 none;
+  float: right;
 }
 
 .navbar-brand {
@@ -75,33 +90,36 @@ h1 {
 }
 
 footer {
+  height: 100px;
   background: #666;
   padding: 15px 0;
   clear: both;
   border-top: 5px solid #4aaa;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   text-align: center;
+  color: #fff;
 }
+
 .copyr {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
+  text-align: center;
   color: #fff;
 }
 
 /* Portfolio */
 
 .card-img-top {
-  width: 80%;
+  width: 90%;
   height: auto;
-  margin-top: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  border: none;
 }
 .card {
   overflow: auto;
   position: relative;
-
   margin: 20px 0 25px;
+  background-color: #ddd;
 }
 
 .btn-secondary {
@@ -109,7 +127,7 @@ footer {
   border: 0 none;
   color: #fff;
   font-size: 18px;
-  padding: 10px 30px;
+  padding: 10px 10px;
   cursor: pointer;
   width: 100%;
 }
@@ -128,14 +146,19 @@ footer {
 }
 
 /* contact */
-form {
-  width: 70%;
-  margin-left: 20px;
+
+.main {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .form-control {
   display: block;
-
   padding: 20px;
   font-size: 15px;
   line-height: 1.5;
@@ -150,19 +173,19 @@ label {
   width: 100%;
 }
 
-input [type='name'],
+input [type='text'],
 input [type='email'],
 textarea {
   width: 70%;
   height: 35px;
   border: 1px solid #ddd;
-  display: inline-block;
-  padding: 20 20px;
+  display: block;
+  padding: 0 10px;
   font-size: 14px;
 }
 
 textarea {
-  height: 80px;
+  height: 90px;
 }
 
 .btn-primary {
@@ -177,4 +200,107 @@ textarea {
 
 input[type='submit']:hover {
   background-color: #45a049;
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    max-width: 768px;
+
+    /* Box-model */
+    padding: 0 20px;
+  }
+
+  main.container {
+    padding-top: 130px;
+  }
+
+  .main-section {
+    max-width: 420px;
+  }
+
+  .work {
+    width: 100%;
+  }
+
+  .auth-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-section,
+  .sidebar {
+    max-width: 100%;
+  }
+
+  main {
+    overflow: auto;
+  }
+
+  .work {
+    /* Box-model */
+    width: 47%;
+
+    /* Positioning */
+    margin-bottom: 10px;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 0;
+  }
+
+  .work:nth-child(odd) {
+    float: right;
+  }
+
+  .auth-image {
+    width: 50%;
+  }
+
+  .sidebar {
+    margin-bottom: 40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #masthead {
+    /* Positioning */
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  header .container {
+    padding: 0;
+  }
+
+  main.container {
+    padding-top: 0;
+  }
+
+  #logo,
+  .work,
+  .auth-image {
+    width: 100%;
+  }
+
+  nav {
+    /* Box-model */
+    width: 100%;
+
+    /* Positioning */
+    margin: 15px 0;
+
+    /* Typography */
+    text-align: center;
+  }
+
+  nav a {
+    /* Box-model */
+    width: 30%;
+    padding-left: 0;
+
+    /* Positioning */
+    margin-left: 0;
+  }
 }
