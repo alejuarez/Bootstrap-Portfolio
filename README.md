@@ -4,16 +4,16 @@ This Portfolio displays information about me, the projects I have done and how t
 
 ### Initial screen:
 
-![aboutme]
+<img src=images/aboutme.PNG>
 
 ### Portfolio screen:
 
 Here are some of the projects I have done during the bootcamp.
 
-![portfolio]
+<img src=images/portfolio.PNG>
 
 ### Contact screen:
 
 Here is the form to leave your information, just for development purposes.
 
-![contact]
+<img src=images/contact.PNG>
