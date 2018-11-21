@@ -149,12 +149,23 @@ footer {
 
 .main {
   float: left;
-  width: 100%;
+  width: 80%;
   max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
   border: 1px solid #ddd;
+}
+.sidebar {
+  float: right;
+  padding-right: 30px;
+}
+.social {
+  height: 70px;
+}
+.btn-link {
+  width: 40%;
+  font-weight: 50;
 }
 
 .form-control {
