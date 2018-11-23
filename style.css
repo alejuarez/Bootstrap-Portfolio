@@ -9,31 +9,17 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
-  background: url(../bootstrap-portfolio/images/circles-light.png);
+  background: url(./images/circles-light.png);
 }
-
 .container {
   width: 100%;
   margin: auto;
   padding: 25px;
   clear: both;
 }
-
 h1,
-h3,
 p {
   margin-bottom: 20px;
-}
-
-h3 {
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-weight: 700;
-  padding-bottom: 20px;
-  font-size: 30px;
-  line-height: 49px;
-  color: rgba(26, 43, 43, 0.667);
-  margin-left: 10px;
-  border-bottom: 2px solid #4aaa;
 }
 
 h1 {
@@ -44,24 +30,7 @@ h1 {
 }
 
 .navbar {
-  height: 100px;
-  border-bottom: 5px solid #4aaa;
-}
-nav li {
-  color: rgb(77, 41, 41);
-  float: right;
-  padding-left: 15px;
-  margin-left: 15px;
-  margin-top: 25px;
-  /* display: inline-block; */
-  border-left: 1px solid #efefef;
-}
-
-nav li:first-child {
-  padding-left: 0;
-  margin-left: 30px;
-  border-left: 0 none;
-  float: right;
+  height: 60px;
 }
 
 .navbar-brand {
@@ -77,20 +46,22 @@ nav li:first-child {
 }
 
 .auth-image {
-  width: 110px;
+  width: 160px;
   height: auto;
   margin-top: 10px;
-  float: left;
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-left: 20px;
+  float: center;
+  border-radius: 50%;
 }
 
 .caption {
-  width: 90%;
+  width: 100%;
+  float: left;
+  margin-left: 10px;
 }
 
 footer {
-  height: 100px;
+  height: 70px;
   background: #666;
   padding: 15px 0;
   clear: both;
@@ -100,25 +71,29 @@ footer {
   text-align: center;
   color: #fff;
 }
-
+ul {
+  float: right;
+}
 .copyr {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  text-align: center;
+  font-size: 20px;
+  text-align: right;
+  display: inline-block;
   color: #fff;
 }
 
 /* Portfolio */
 
 .card-img-top {
-  width: 90%;
-  height: auto;
+  width: 100%;
+  height: 180px;
   border: none;
 }
 .card {
   overflow: auto;
   position: relative;
   margin: 20px 0 25px;
+  font-size: 15px;
   background-color: #ddd;
 }
 
@@ -149,19 +124,36 @@ footer {
 
 .main {
   float: left;
-  width: 80%;
-  max-width: 650px;
+  width: 100%;
+  max-width: 860px;
   padding: 30px;
   margin: 0 0 40px;
-  background: #fff;
   border: 1px solid #ddd;
 }
+
+.container-contact {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  background-color: white;
+  border: 5px solid darkgray;
+  margin-top: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80%;
+  width: 80%;
+  clear: both;
+}
 .sidebar {
-  float: right;
-  padding-right: 30px;
+  padding-top: 5%;
+  margin-left: 20%;
+  margin-right: 20%;
+  position: relative;
 }
 .social {
-  height: 70px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 15px;
 }
 .btn-link {
   width: 40%;
@@ -178,25 +170,6 @@ footer {
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
-}
-label {
-  display: block;
-  width: 100%;
-}
-
-input [type='text'],
-input [type='email'],
-textarea {
-  width: 70%;
-  height: 35px;
-  border: 1px solid #ddd;
-  display: block;
-  padding: 0 10px;
-  font-size: 14px;
-}
-
-textarea {
-  height: 90px;
 }
 
 .btn-primary {
